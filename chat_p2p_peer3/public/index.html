@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chat P2P Multichat</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <h2>Chat P2P Multichat</h2>
+
+  <div id="container">
+    <aside id="lista-peers">
+      <h3>Peers</h3>
+      <ul id="peers"></ul>
+    </aside>
+
+    <section id="chat-section">
+      <form id="formulario" onsubmit="enviarMensagem(event)">
+        <input id="porta" type="number" min="1" max="65535" placeholder="Porta do peer (ex: 5002)" autocomplete="off" required />
+        <input id="mensagem" placeholder="Digite sua mensagem" autocomplete="off" />
+        <button type="submit">Enviar</button>
+      </form>
+
+      <h3>Mensagens</h3>
+      <ul id="mensagens"></ul>
+    </section>
+  </div>
+
+  <div id="notificacoes"></div>
+</body>
+</html>

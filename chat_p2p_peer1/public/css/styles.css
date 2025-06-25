@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 40px auto;
+  background: #f5f7fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+#container {
+  display: flex;
+  gap: 20px;
+}
+
+#lista-peers {
+  width: 200px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+#lista-peers ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#lista-peers li {
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+#lista-peers li:hover {
+  background: #e0e0e0;
+}
+
+#lista-peers li.active {
+  background: #007bff;
+  color: white;
+  border-color: #0056b3;
+  font-weight: bold;
+}
+
+#chat-section {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+form#formulario {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form#formulario input[type=number],
+form#formulario input[type=text] {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  flex: 0 0 140px;
+}
+
+form#formulario input#mensagem {
+  flex-grow: 1;
+}
+
+form#formulario button {
+  background: #007bff;
+  border: none;
+  color: white;
+  padding: 0 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form#formulario button:hover {
+  background: #0056b3;
+}
+
+#mensagens {
+  list-style: none;
+  padding-left: 0;
+  max-height: 450px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 4px;
+}
+
+#mensagens li {
+  padding: 10px 15px;
+  margin: 8px;
+  max-width: 75%;
+  border-radius: 20px;
+  clear: both;
+  word-wrap: break-word;
+  font-size: 15px;
+}
+
+#mensagens li.remetente {
+  background-color: #dcf8c6;
+  float: right;
+  text-align: right;
+}
+
+#mensagens li.destinatario {
+  background-color: #ebf5fb;
+  float: left;
+  text-align: left;
+}
+
+#notificacoes {
+  margin-top: 15px;
+}
+
+.notificacao {
+  background: #fff3cd;
+  border: 1px solid #ffeeba;
+  padding: 10px;
+  border-radius: 5px;
+  color: #856404;
+  margin-bottom: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  max-width: 600px;
+}
